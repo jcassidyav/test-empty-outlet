@@ -23,11 +23,11 @@ export class BrowseComponent implements OnInit {
     sideDrawer.showDrawer()
   }
 
-  onBack = (): void => {
+  onBack() {
     console.log("called");
     if (this.routerExtensions.canGoBack()) {
         console.log("Can go back");
         this.routerExtensions.back();
     }
-};
+  }
 }
